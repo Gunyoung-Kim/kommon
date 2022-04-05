@@ -2,47 +2,44 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.gunyoung</groupId>
+    <artifactId>kommon</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>kommon</name>
     <packaging>pom</packaging>
+
+    <parent>
+        <groupId>com.gunyoung</groupId>
+        <artifactId>jommon</artifactId>
+        <version>0.0.2</version>
+    </parent>
+
     <modules>
         <module>kommon-api</module>
         <module>kommon-common</module>
         <module>kommon-view</module>
     </modules>
-    <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.6</version>
-        <relativePath/> <!-- lookup parent from repository -->
-    </parent>
-    <groupId>com.gunyoung</groupId>
-    <artifactId>kommon</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>kommon</name>
-    <description>kommon</description>
-    <properties>
-        <java.version>11</java.version>
-        <kotlin.version>1.6.10</kotlin.version>
-    </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-reflect</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-stdlib-jdk8</artifactId>
-        </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.gunyoung</groupId>
+                <artifactId>kommon-api</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gunyoung</groupId>
+                <artifactId>kommon-common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.gunyoung</groupId>
+                <artifactId>kommon-view</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
@@ -73,5 +70,12 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>gunyoung-release</id>
+            <url>https://raw.githubusercontent.com/Gunyoung-Kim/maven-repo/master/repo/releases</url>
+        </repository>
+    </repositories>
 
 </project>
