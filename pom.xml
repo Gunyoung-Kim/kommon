@@ -4,7 +4,7 @@
 
     <groupId>com.gunyoung</groupId>
     <artifactId>kommon</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>kommon</name>
     <packaging>pom</packaging>
 
@@ -25,17 +25,17 @@
             <dependency>
                 <groupId>com.gunyoung</groupId>
                 <artifactId>kommon-api</artifactId>
-                <version>0.0.1</version>
+                <version>0.0.2-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.gunyoung</groupId>
                 <artifactId>kommon-common</artifactId>
-                <version>0.0.1</version>
+                <version>0.0.2-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.gunyoung</groupId>
                 <artifactId>kommon-view</artifactId>
-                <version>0.0.1</version>
+                <version>0.0.2-SNAPSHOT</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
