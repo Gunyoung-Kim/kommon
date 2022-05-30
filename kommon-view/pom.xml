@@ -9,16 +9,16 @@
     </parent>
 
     <artifactId>kommon-view</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>com.gunyoung</groupId>
-            <artifactId>kommon-common</artifactId>
-            <version>0.0.1</version>
+            <artifactId>jommon-view</artifactId>
         </dependency>
         <dependency>
             <groupId>com.gunyoung</groupId>
-            <artifactId>jommon-view</artifactId>
+            <artifactId>kommon-common</artifactId>
         </dependency>
     </dependencies>
 

@@ -9,12 +9,16 @@
     </parent>
 
     <artifactId>kommon-api</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
             <groupId>com.gunyoung</groupId>
+            <artifactId>jommon-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.gunyoung</groupId>
             <artifactId>kommon-common</artifactId>
-            <version>0.0.1</version>
         </dependency>
     </dependencies>
 
