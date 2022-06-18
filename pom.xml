@@ -2,17 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.gunyoung</groupId>
-    <artifactId>kommon</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
-    <name>kommon</name>
-    <packaging>pom</packaging>
-
     <parent>
         <groupId>com.gunyoung</groupId>
         <artifactId>jommon</artifactId>
-        <version>0.0.3</version>
+        <version>0.0.4</version>
     </parent>
+
+    <groupId>com.gunyoung</groupId>
+    <artifactId>kommon</artifactId>
+    <version>0.0.3-SNAPSHOT</version>
+    <name>kommon</name>
+    <packaging>pom</packaging>
+
 
     <modules>
         <module>kommon-api</module>
@@ -25,17 +26,17 @@
             <dependency>
                 <groupId>com.gunyoung</groupId>
                 <artifactId>kommon-api</artifactId>
-                <version>${project.version}</version>
+                <version>0.0.3-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.gunyoung</groupId>
                 <artifactId>kommon-common</artifactId>
-                <version>${project.version}</version>
+                <version>0.0.3-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.gunyoung</groupId>
                 <artifactId>kommon-view</artifactId>
-                <version>${project.version}</version>
+                <version>0.0.3-SNAPSHOT</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
