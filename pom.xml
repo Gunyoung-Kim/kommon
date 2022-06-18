@@ -4,7 +4,7 @@
 
     <groupId>com.gunyoung</groupId>
     <artifactId>kommon</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.4-SNAPSHOT</version>
     <name>kommon</name>
     <packaging>pom</packaging>
 
