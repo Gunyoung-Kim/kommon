@@ -19,7 +19,6 @@
         <dependency>
             <groupId>com.gunyoung</groupId>
             <artifactId>kommon-common</artifactId>
-            <version>0.0.2</version>
         </dependency>
     </dependencies>
 

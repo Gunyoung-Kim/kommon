@@ -25,17 +25,17 @@
             <dependency>
                 <groupId>com.gunyoung</groupId>
                 <artifactId>kommon-api</artifactId>
-                <version>${project.version}</version>
+                <version>0.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.gunyoung</groupId>
                 <artifactId>kommon-common</artifactId>
-                <version>${project.version}</version>
+                <version>0.0.2</version>
             </dependency>
             <dependency>
                 <groupId>com.gunyoung</groupId>
                 <artifactId>kommon-view</artifactId>
-                <version>${project.version}</version>
+                <version>0.0.2</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
